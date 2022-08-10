@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+.content {
+padding: 50px;
+}
+.content_bounce {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 0%;
+
+    animation-name: bounce;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.content:hover .content_bounce {
+    animation-play-state: paused;
+}
+
+@keyframes bounce {
+    0%{
+left: 0%;
+    }
+    50%{
+width: 300px;
+border-radius: 3%;
+background-color: aquamarine;
+    }
+    100%{
+        left: 1200px;
+    }
+}
