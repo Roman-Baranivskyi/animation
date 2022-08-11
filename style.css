@@ -1,9 +1,11 @@
 body {
     background-color: gray;
 }
+
 .content {
-padding: 50px;
+    padding: 50px;
 }
+
 .content_bounce {
     width: 100px;
     height: 100px;
@@ -26,15 +28,17 @@ padding: 50px;
 }
 
 @keyframes bounce {
-    0%{
-left: 0%;
+    0% {
+        left: 0%;
     }
-    50%{
-width: 300px;
-border-radius: 3%;
-background-color: aquamarine;
+
+    50% {
+        width: 300px;
+        border-radius: 3%;
+        background-color: aquamarine;
     }
-    100%{
+
+    100% {
         left: 1200px;
     }
 }
